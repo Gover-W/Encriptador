@@ -64,7 +64,7 @@ function verificarTexto() {
 function verificarTexto2() {
 
     let name = document.getElementById("caja-mensaje").value;
-    let regex = /^[a-z]+$/;
+    let regex = /^[a-z]+(\s[a-z]+)?$/;
 
     if (regex.test(name)) {
         desencriptar();
